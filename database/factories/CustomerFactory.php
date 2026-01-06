@@ -14,8 +14,8 @@ class CustomerFactory extends Factory
     {
 
         return [
-            'name' => $this->faker->name(),
-            'type' => CustomerType::random(),
+            'name' => $this->faker->company(),
+            'type' => $this->faker->randomElement(CustomerType::cases()),
         ];
     }
 }
