@@ -43,7 +43,7 @@ class CustomerForm extends Component
                 'type' => $this->type,
             ]);
 
-            session()->flash('success', 'Customer updated successfully.');
+            session()->flash('success', 'Kund uppdaterad.');
         } else {
             Customer::create([
                 'name' => $this->name,
@@ -51,7 +51,7 @@ class CustomerForm extends Component
             ]);
         }
 
-        session()->flash('success', 'Customer created successfully.');
+        session()->flash('success', 'Kund skapad');
         $this->redirect('/customers');
     }
 
