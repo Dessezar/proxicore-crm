@@ -11,5 +11,6 @@ Route::get('/', function () {
 
 Route::get('/counter', Counter::class);
 Route::get('/customers', CustomerList::class)->name('customers.index');
+Route::get('/customer-details', CustomerForm::class)->name('customers.details');
 Route::get('/customers/create', CustomerForm::class)->name('customers.create');
 Route::get('/customers/{customer}', CustomerForm::class)->name('customers.edit');
