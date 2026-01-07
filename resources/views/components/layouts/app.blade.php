@@ -17,14 +17,14 @@
 
             <nav class="px-2 space-y-1">
                 <a
-                    href="/customers"
+                    href="{{ route('customers.index') }}"
                     class="block px-3 py-2 rounded hover:bg-gray-100"
                 >
                     Kundlista
                 </a>
 
                 <a
-                    href="/customers/create"
+                    href="{{ route('customers.details') }}"
                     class="block px-3 py-2 rounded hover:bg-gray-100"
                 >
                     Kunddetaljer
