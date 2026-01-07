@@ -2,12 +2,6 @@
     <div class="flex items-center justify-between mb-6">
         <h1 class="text-2xl font-bold">Kundlista</h1>
 
-        <a
-            href="/customers/create"
-            class="px-4 py-2 rounded bg-indigo-600 text-white hover:bg-indigo-700"
-        >
-            Ny kund
-        </a>
     </div>
 
     <div class="bg-white border rounded shadow-sm overflow-hidden">
