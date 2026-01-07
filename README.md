@@ -11,14 +11,19 @@ The application is implemented using Laravel and Livewire with a server-driven U
    composer install
 3. Install frontend dependencies
    npm install
-4. Create SQLite database
+4. Create .env fil
+   cp .env.example .env
+5. Generate APP_KEY
+   php artisan key:generate
+6. Create SQLite database
    touch database/database.sqlite
-5. Run migrations and seed data
+7. Run migrations and seed data
    php artisan migrate:fresh --seed
-6. Start development servers
+8. Start development servers
    php artisan serve
+9. In another terminal run:
    npm run dev
-
+10. Go to http://127.0.0.1:8000
 
 ## Tech stack
 
